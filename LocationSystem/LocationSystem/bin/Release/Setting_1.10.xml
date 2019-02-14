@@ -1,0 +1,159 @@
+<root>
+    <!-- シルウォッチ設定 -->
+	<userlist>
+		<!-- 作業者１-->
+		<user no = "1">
+		    <!-- enableが1のときシルウォッチは動作します -->
+			<enable>1</enable>
+			<!-- IPPowerのIPアドレス -->
+		    <ipaddress>192.168.100.200</ipaddress>
+			<!-- Relay1:61 Relay2:62 Relay3:63 Relay4:64 -->
+			<port>61</port>
+		</user>
+		<user no = "2">
+			<enable>1</enable>
+			<ipaddress>192.168.1.36</ipaddress>
+			<port>62</port>
+		</user>
+		<user no = "3">
+			<enable>1</enable>
+			<ipaddress>192.168.1.36</ipaddress>
+			<port>63</port>
+		</user>
+		<user no = "4">
+			<enable>1</enable>
+			<ipaddress>192.168.1.36</ipaddress>
+			<port>64</port>
+		</user>
+		<user no = "5">
+			<enable>1</enable>
+			<ipaddress>192.168.1.4</ipaddress>
+			<port>61</port>
+		</user>
+		<user no = "6">
+			<enable>1</enable>
+			<ipaddress>192.168.1.4</ipaddress>
+			<port>62</port>
+		</user>
+		<user no = "7">
+			<enable>1</enable>
+			<ipaddress>192.168.1.4</ipaddress>
+			<port>63</port>
+		</user>
+		<user no = "8">
+			<enable>1</enable>
+			<ipaddress>192.168.1.4</ipaddress>
+			<port>64</port>
+		</user>
+		<user no = "9">
+			<enable>1</enable>
+			<ipaddress>192.168.1.5</ipaddress>
+			<port>61</port>
+		</user>
+		<user no = "10">
+			<enable>1</enable>
+			<ipaddress>192.168.1.5</ipaddress>
+			<port>62</port>
+		</user>
+		<user no = "11">
+			<enable>1</enable>
+			<ipaddress>192.168.1.5</ipaddress>
+			<port>63</port>
+		</user>
+		<user no = "12">
+			<enable>1</enable>
+			<ipaddress>192.168.1.5</ipaddress>
+			<port>64</port>
+		</user>
+		<user no = "13">
+			<enable>1</enable>
+			<ipaddress>192.168.1.6</ipaddress>
+			<port>61</port>
+		</user>
+		<user no = "14">
+			<enable>1</enable>
+			<ipaddress>192.168.1.6</ipaddress>
+			<port>62</port>
+		</user>
+		<user no = "15">
+			<enable>1</enable>
+			<ipaddress>192.168.1.6</ipaddress>
+			<port>63</port>
+		</user>
+		<user no = "16">
+			<enable>1</enable>
+			<ipaddress>192.168.1.6</ipaddress>
+			<port>64</port>
+		</user>
+		<user no = "17">
+			<enable>1</enable>
+			<ipaddress>192.168.1.7</ipaddress>
+			<port>61</port>
+		</user>
+		<user no = "18">
+			<enable>1</enable>
+			<ipaddress>192.168.1.7</ipaddress>
+			<port>62</port>
+		</user>
+		<user no = "19">
+			<enable>1</enable>
+			<ipaddress>192.168.1.7</ipaddress>
+			<port>63</port>
+		</user>
+		<user no = "20">
+			<enable>1</enable>
+			<ipaddress>192.168.1.7</ipaddress>
+			<port>64</port>
+		</user>
+	</userlist>
+
+	<!-- 加重移動平均設定-->
+	<weightedmovingaveragelist>
+		<weightedmovingaverage>
+			<!-- 0 ～ 100 を設定する-->
+			<!-- 作業者の移動平均回数-->
+	    	<usergroupcount>10</usergroupcount>
+			<!-- 重機の移動平均回数-->
+	    	<machinegroupcount>100</machinegroupcount>
+		</weightedmovingaverage>
+	</weightedmovingaveragelist>
+
+	<!-- XY固定設定-->
+	<machinelist>
+		<!-- 重機１-->
+		<machine no="1">
+		    <!-- LockEnableXが1のときX座標は固定されます -->
+	    	<LockEnableX>0</LockEnableX>
+	    	<!-- 固定するX座標を設定 -->
+		    <LockPositionX>100.0</LockPositionX>
+		    <!-- LockEnableYが1のときY座標は固定されます -->
+		    <LockEnableY>1</LockEnableY>
+		    <!-- 固定するY座標を設定 -->
+		    <LockPositionY>20.0</LockPositionY>
+		</machine>
+		<machine no="2">
+		    <LockEnableX>1</LockEnableX>
+		    <LockPositionX>20.0</LockPositionX>
+		    <LockEnableY>0</LockEnableY>
+		    <LockPositionY>20.0</LockPositionY>
+		</machine>
+		<machine no="3">
+		    <LockEnableX>1</LockEnableX>
+		    <LockPositionX>20.0</LockPositionX>
+		    <LockEnableY>0</LockEnableY>
+		    <LockPositionY>20.0</LockPositionY>
+		</machine>
+		<machine no="4">
+		    <LockEnableX>1</LockEnableX>
+		    <LockPositionX>20.0</LockPositionX>
+		    <LockEnableY>0</LockEnableY>
+		    <LockPositionY>20.0</LockPositionY>
+		</machine>
+		<machine no="5">
+		    <LockEnableX>1</LockEnableX>
+		    <LockPositionX>20.0</LockPositionX>
+		    <LockEnableY>0</LockEnableY>
+		    <LockPositionY>20.0</LockPositionY>
+		</machine>
+	</machinelist>
+</root>
